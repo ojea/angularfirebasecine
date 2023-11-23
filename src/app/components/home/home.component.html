@@ -1,0 +1,22 @@
+<h1>Peliculas y series</h1>
+<hr/>
+<div
+  class="row row-cols-1 row-cols-md-4 g-4"
+  style="width: 90%; margin: 0 auto"
+  
+>
+  <div class="col" *ngFor="let peliyserie of pelisYseries">
+        <div class="card h-100">
+      <img
+        class="card-img-top"
+        src="{{ peliyserie.imagen }}"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ peliyserie.titulo }}</h5>
+        <p class="card-text">Director: {{ peliyserie.director }}</p>
+        <p class="card-text">Categoria: {{ peliyserie.categoria }}</p>
+      </div>
+    </div>
+  </div>
+</div>
